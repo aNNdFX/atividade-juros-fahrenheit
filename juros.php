@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Juros Simples</title>
-</head>
-<body style="background-color: black; color: white;">
+</Head>
+<Body style="background-color: black; color: white;">
     <div>
         <h1>JUROS SIMPLES</h1>
         <p> Não inserir o dado do campo que será calculado </p>
