@@ -81,10 +81,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 if ($juros && $capital && $prazo) {
                     $resultado = calculoTaxa($juros, $capital, $prazo);
                     echo "<h1>Sua taxa é de: " . number_format($resultado, 2) . "</h1>";
-                } else {
+                } Else {
                     echo "<h1>Preencha Juros, Capital e Prazo!</h1>";
                 }
-                break;
+                Break;
         }
     }
 }
