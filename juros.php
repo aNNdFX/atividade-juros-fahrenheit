@@ -2,7 +2,7 @@
 <html lang="br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de Juros Simples</title>
 </head>
 <body style="background-color: black; color: white;">
