@@ -34,18 +34,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $operacao = $_GET['operacao'] ?? null;
 
     // Funções para cálculos
+    //Juros
     function calculoJuros($capital, $prazo, $taxa) {
         return $capital * $prazo * $taxa;
     }
-
+    //Capital
     function calculoCapital($juros, $prazo, $taxa) {
         return $juros / ($prazo * $taxa);
     }
-
+    //Prazo
     function calculoPrazo($juros, $capital, $taxa) {
         return $juros / ($capital * $taxa);
     }
-    
+    //Taxa
     function calculoTaxa($juros, $capital, $prazo) {
         return $juros / ($capital * $prazo);
     }
@@ -53,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     // Verifica a operação e calcula
     if ($operacao) {
         switch ($operacao) {
-            case 'juros':
+            case 'juros': //Recusa a operação se dados invalidos forem inseridos
                 if ($capital && $prazo && $taxa) {
                     $resultado = calculoJuros($capital, $prazo, $taxa);
                     echo "<h1>Seus juros são de: " . number_format($resultado, 2) . "</h1>";
